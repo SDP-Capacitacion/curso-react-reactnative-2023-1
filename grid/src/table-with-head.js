@@ -2,7 +2,7 @@ import React from "react";
 
 const TableWithHead = () => {
   return (
-    <section className="tableWithHead">
+    <section className="table-with-head">
       <div class="table-head head1">Cabecera</div>
       <div class="table-head head2">celda uno </div>
       <div class="table-head head3">celda dos</div>
