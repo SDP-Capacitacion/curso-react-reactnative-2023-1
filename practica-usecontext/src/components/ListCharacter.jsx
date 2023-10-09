@@ -3,10 +3,17 @@ import React from "react";
 const ListCharacter = ({ character = [] }) => {
   return (
     <>
-      {character.map((item, index) => {
-        console.log(item.name, "character");
-        <p key={index}>{item.name}</p>;
-      })}
+      <section className="container">
+        <ul className="container-list">
+          {character.map((item, index) => {
+            return (
+              <ol className="item-character" key={index}>
+                {item.name}
+              </ol>
+            );
+          })}
+        </ul>
+      </section>
     </>
   );
 };

@@ -1,4 +1,32 @@
-nav {
+/* Navbar */
+.nav {
   background-color: #e89ac7;
   padding: 10px 15px;
+}
+
+/* List Character */
+.container-list {
+  width: 600px;
+  margin: 40px auto;
+  display: block;
+}
+
+.item-character {
+  background-color: #97ce4c;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.item-character:hover {
+  transform: scale(1.02);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
 }

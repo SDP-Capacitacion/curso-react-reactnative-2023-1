@@ -18,3 +18,8 @@ body {
 .underline-none {
   text-decoration: none;
 }
+
+ul,
+ol {
+  padding: 0;
+}
