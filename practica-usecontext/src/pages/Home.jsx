@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import ListCharacter from "../components/ListCharacter";
 import Pagination from "../components/Pagination";
 
@@ -33,7 +32,6 @@ const Home = () => {
 
   return (
     <main>
-      <Navbar />
       <ListCharacter character={character} />
       <Pagination
         prev={info.prev}

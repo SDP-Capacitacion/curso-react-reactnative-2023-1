@@ -30,3 +30,15 @@
   margin: 20px 0;
   gap: 20px;
 }
+
+.danger {
+  background-color: #ff3333;
+}
+
+.success {
+  background-color: #27c41d;
+}
+
+.warning {
+  background-color: #ffc300;
+}
