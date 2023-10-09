@@ -16,23 +16,25 @@ const CardDetails = () => {
   }, [api]);
 
   return (
-    <div className="container">
-      <h1>{name}</h1>
-      <img src={image} alt={name} />
-      {(() => {
-        if (status === "Dead") {
-          return <div className="danger">{status}</div>;
-        } else if (status === "Alive") {
-          return <div className="success">{status}</div>;
-        } else {
-          return <div className="warning">{status}</div>;
-        }
-      })()}
-      <p>Gender: {gender}</p>
-      <p>Location: {location?.name}</p>
-      <p>Origin: {origin?.name}</p>
-      <p>Species: {species}</p>
-      <p>Type: {type}</p>
+    <div className="container-card">
+      <div className="detail">
+        <h1 className="center">{name}</h1>
+        <img src={image} alt={name} />
+        {(() => {
+          if (status === "Dead") {
+            return <div className="danger center">{status}</div>;
+          } else if (status === "Alive") {
+            return <div className="success center">{status}</div>;
+          } else {
+            return <div className="warning center">{status}</div>;
+          }
+        })()}
+        <p>Gender: {gender}</p>
+        <p>Location: {location?.name}</p>
+        <p>Origin: {origin?.name}</p>
+        <p>Species: {species}</p>
+        <p>Type: {type}</p>
+      </div>
     </div>
   );
 };

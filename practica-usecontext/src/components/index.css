@@ -4,6 +4,11 @@
   padding: 10px 15px;
 }
 
+.brand {
+  text-decoration: none;
+  color: black;
+}
+
 /* List Character */
 .container-list {
   width: 600px;
@@ -17,6 +22,11 @@
   border-bottom: 1px solid black;
   text-align: center;
   transition: 0.5s;
+  color: black;
+}
+
+.linkto {
+  text-decoration: none;
 }
 
 .item-character:hover {
@@ -29,6 +39,28 @@
   justify-content: center;
   margin: 20px 0;
   gap: 20px;
+}
+
+/* Details */
+.container-card {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.detail {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.detail p {
+  line-height: 25px;
+  margin: 0;
 }
 
 .danger {

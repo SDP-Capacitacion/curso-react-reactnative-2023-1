@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <main>
-      <ListCharacter character={character} />
+      <ListCharacter page="/" character={character} />
       <Pagination
         prev={info.prev}
         next={info.next}
