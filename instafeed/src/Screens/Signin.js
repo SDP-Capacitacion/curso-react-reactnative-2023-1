@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import Avatar from "../components/avatar";
 import Form from "../components/form";
 import ComponentButton from "../components/componentButton";
@@ -10,6 +10,9 @@ export default function SignIn() {
     <View style={styles.container}>
       <Avatar style={{ width: 150, height: 150, borderRadius: 100 }} />
       <Form />
+      <Text style={styles.linkTo}>
+        ¿Ya tienes cuenta? <Text style={styles.bold}>Inicia sesión</Text>
+      </Text>
       <ComponentButton title="Regístrate" />
     </View>
   );
@@ -22,5 +25,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+  },
+  linkTo: {
+    fontSize: "12px",
+    textAlign: "right",
+    marginTop: "5px",
+    width: "70%",
+  },
+  bold: {
+    fontWeight: 800,
   },
 });

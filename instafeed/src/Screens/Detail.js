@@ -6,11 +6,11 @@ import User from "../components/user";
 import Description from "../components/description";
 import { stylesScreen } from "./ScreenStyle";
 
-export default function Detail() {
+export default function Feed() {
   return (
-    <View style={styles.layout}>
+    <View style={stylesDetail.layout}>
       <Header />
-      <View style={styles.container}>
+      <View style={stylesDetail.container}>
         <User />
         <Photo />
         <Description />
@@ -19,7 +19,7 @@ export default function Detail() {
   );
 }
 
-const styles = StyleSheet.create({
+const stylesDetail = StyleSheet.create({
   layout: {
     flex: 1,
   },
