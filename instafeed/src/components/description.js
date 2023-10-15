@@ -1,9 +1,9 @@
 import React from "react-native";
 import { StyleSheet, Text } from "react-native";
 
-export default function Description() {
+export default function Description({ numberOfLines }) {
   return (
-    <Text>
+    <Text style={styles.containerText} numberOfLines={numberOfLines}>
       Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos
       de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
       industrias desde el año 1500, cuando un impresor (N. del T. persona que se
@@ -15,12 +15,9 @@ export default function Description() {
   );
 }
 
-// const styles = StyleSheet.create({
-//   header: {
-//     borderBottomColor: "#aaaaaa",
-//     borderBottomWidth: "1px",
-//     padding: 10,
-//     width: "100%",
-//     textAlign: "center",
-//   },
-// });
+const styles = StyleSheet.create({
+  containerText: {
+    width: "90%",
+    marginTop: "10px",
+  },
+});

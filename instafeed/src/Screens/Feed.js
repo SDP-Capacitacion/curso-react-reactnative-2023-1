@@ -8,16 +8,21 @@ import { stylesScreen } from "./ScreenStyle";
 
 export default function Feed() {
   return (
-    <View style={styles.container}>
+    <View style={styles.layout}>
       <Header />
-      <User />
-      <Photo />
-      <Description />
+      <View style={styles.container}>
+        <User />
+        <Photo />
+        <Description numberOfLines={1} />
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  layout: {
+    flex: 1,
+  },
   container: {
     flex: 1,
     backgroundColor: "#fff",
