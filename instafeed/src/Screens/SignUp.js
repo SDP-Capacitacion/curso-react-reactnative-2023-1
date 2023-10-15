@@ -1,12 +1,26 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Avatar from "../components/avatar";
+import Form from "../components/form";
+import ComponentButton from "../components/componentButton";
 import { stylesScreen } from "./ScreenStyle";
 
-export default function SignUp({ style }) {
+export default function SignUp() {
   return (
-    <View>
-      <Avatar style={{ width: 100, height: 100, borderRadius: 100 }} />
+    <View style={styles.container}>
+      <Avatar style={{ width: 150, height: 150, borderRadius: 100 }} />
+      <Form />
+      <ComponentButton title="Iniciar sesión" />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+});

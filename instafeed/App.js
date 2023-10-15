@@ -1,19 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
-import SignUp from "./src/Screens/signup";
+// import SignUp from "./src/Screens/signup";
+// import SignIn from "./src/Screens/signin";
+import Feed from "./src/Screens/feed";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <SignUp />
-    </View>
-  );
+  return <Feed />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
