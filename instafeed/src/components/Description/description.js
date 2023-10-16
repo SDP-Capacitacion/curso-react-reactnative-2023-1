@@ -1,6 +1,6 @@
 import React from "react-native";
 import { Text } from "react-native";
-import { style } from "./CompontentsStyle";
+import { style } from "./style";
 
 export default function Description({ numberOfLines }) {
   return (

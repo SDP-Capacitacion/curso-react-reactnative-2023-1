@@ -1,5 +1,5 @@
 import { Image } from "react-native";
-import { style } from "./CompontentsStyle";
+import { style } from "./style";
 
 export default function Photo() {
   return (

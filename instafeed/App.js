@@ -1,7 +1,7 @@
-import SignUp from "./src/Screens/signup";
-// import SignIn from "./src/Screens/signin";
-// import Feed from "./src/Screens/feed";
-// import Detail from "./src/Screens/Detail";
+import SignUp from "./src/Screens/SignUp/Signup";
+// import SignIn from "./src/Screens/SignIn/SignIn";
+// import Feed from "./src/Screens/Feed/Feed";
+// import Detail from "./src/Screens/Detail/Detail";
 
 export default function App() {
   return <SignUp />;

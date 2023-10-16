@@ -1,7 +1,7 @@
 import React from "react-native";
 import { View, StyleSheet, Text } from "react-native";
-import Avatar from "./avatar";
-import { style } from "./CompontentsStyle";
+import Avatar from "../Avatar/avatar";
+import { style } from "./style";
 
 export default function User() {
   return (
