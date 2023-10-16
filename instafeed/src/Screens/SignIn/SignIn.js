@@ -9,7 +9,9 @@ import { style } from "../style";
 export default function SignIn() {
   return (
     <View style={style.container}>
-      <Avatar style={{ width: 150, height: 150, borderRadius: 100 }} />
+      <Avatar
+        style={{ width: 150, height: 150, borderRadius: 100, marginBottom: 20 }}
+      />
       <Form />
       <Cta textSignIn="¿Ya tienes cuenta?" action="Inicia sesión" />
       <Press title="Regístrate" />

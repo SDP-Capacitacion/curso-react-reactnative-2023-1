@@ -1,4 +1,4 @@
-import { TextInput } from "react-native";
+import { TextInput, View } from "react-native";
 import { style } from "./style";
 
 export default function Form() {

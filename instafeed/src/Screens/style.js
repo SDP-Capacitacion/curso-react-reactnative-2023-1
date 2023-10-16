@@ -13,6 +13,9 @@ const style = StyleSheet.create({
     paddingLeft: "5%",
     paddingRight: "5%",
   },
+  form: {
+    marginTop: "30px",
+  },
 });
 
 export { style };
