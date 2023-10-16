@@ -1,28 +1,19 @@
-import { StyleSheet, TextInput } from "react-native";
+import { TextInput } from "react-native";
+import { style } from "./CompontentsStyle";
 
 export default function Form() {
   return (
     <>
       <TextInput
-        style={styles.inputs}
+        style={style.inputs}
         placeholder="Correo Electrónico"
         placeholderTextColor="#c6c6c6"
       />
       <TextInput
-        style={styles.inputs}
+        style={style.inputs}
         placeholder="Contraseña"
         placeholderTextColor="#c6c6c6"
       />
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  inputs: {
-    width: "70%",
-    border: "1px solid #aaaaaa",
-    borderRadius: 10,
-    marginTop: 10,
-    padding: 10,
-  },
-});

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import Header from "../components/header";
 import Photo from "../components/photo";
 import User from "../components/user";
@@ -8,9 +8,9 @@ import { stylesScreen } from "./ScreenStyle";
 
 export default function Feed() {
   return (
-    <View style={stylesDetail.layout}>
+    <View style={stylesScreen.layout}>
       <Header />
-      <View style={stylesDetail.container}>
+      <View style={stylesScreen.container}>
         <User />
         <Photo />
         <Description />
@@ -18,16 +18,3 @@ export default function Feed() {
     </View>
   );
 }
-
-const stylesDetail = StyleSheet.create({
-  layout: {
-    flex: 1,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-  },
-});
