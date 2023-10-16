@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
   containerUser: {
     flexDirection: "row",
-    width: "90%",
+    width: "100%",
     alignItems: "center",
     marginTop: "10px",
   },

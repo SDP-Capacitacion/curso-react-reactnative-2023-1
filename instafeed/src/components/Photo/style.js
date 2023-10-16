@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
   photo: {
-    width: "90%",
+    width: "100%",
     height: "200px",
     marginTop: 10,
   },

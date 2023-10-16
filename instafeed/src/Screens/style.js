@@ -10,6 +10,8 @@ const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    paddingLeft: "5%",
+    paddingRight: "5%",
   },
 });
 

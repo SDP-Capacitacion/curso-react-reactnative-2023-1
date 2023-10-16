@@ -10,7 +10,7 @@ export default function Feed() {
   return (
     <View style={style.layout}>
       <Header />
-      <View style={style.container}>
+      <View>
         <User />
         <Photo />
         <Description />
